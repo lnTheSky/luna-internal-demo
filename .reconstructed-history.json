@@ -1,0 +1,526 @@
+{
+  "branch": "main",
+  "default_author_name": "AlexSky_PC",
+  "default_author_email": "araisky2007@gmail.com",
+  "notes": [
+    "Luna Internal repository was created on February 15, 2026 as a clean slate for the development of the internal base and features.",
+    "The initial commit bootstrapped the repository metadata and added the solution and project files for the internal base module, along with vendored dependencies such as MinHook and ImGui.",
+    "Subsequent commits added the core hooking infrastructure, SDK utilities, and various features such as visuals, combat, and misc functionalities, as well as a comprehensive set of dumpers for extracting game data.",
+    "On June 2, 2026, a README file was added to provide an overview of the repository."
+  ],
+  "commits": [
+    {
+      "message": "bootstrap repository metadata",
+      "date": "2026-02-15T14:56:00+03:00",
+      "include": [
+        ".gitattributes",
+        ".gitignore"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "add solution file",
+      "date": "2026-02-18T20:14:00+03:00",
+      "include": [
+        "Internal Base.sln"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "add internal base project file",
+      "date": "2026-02-25T18:37:00+03:00",
+      "include": [
+        "Internal Base/Internal Base.vcxproj"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "add internal base project filters",
+      "date": "2026-03-03T21:08:00+03:00",
+      "include": [
+        "Internal Base/Internal Base.vcxproj.filters"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "add minhook project files",
+      "date": "2026-03-11T19:42:00+03:00",
+      "include": [
+        "minhook/minhook.vcxproj",
+        "minhook/minhook.vcxproj.filters"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "vendor minhook public headers",
+      "date": "2026-03-19T22:17:00+03:00",
+      "include": [
+        "minhook/ext/minhook/MinHook.h",
+        "minhook/ext/minhook/buffer.h",
+        "minhook/ext/minhook/trampoline.h"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "vendor minhook hde decoder headers",
+      "date": "2026-03-28T16:51:00+03:00",
+      "include": [
+        "minhook/ext/minhook/hde/hde32.h",
+        "minhook/ext/minhook/hde/hde64.h",
+        "minhook/ext/minhook/hde/pstdint.h",
+        "minhook/ext/minhook/hde/table32.h",
+        "minhook/ext/minhook/hde/table64.h"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "vendor minhook source implementation",
+      "date": "2026-04-05T13:26:00+03:00",
+      "include": [
+        "minhook/ext/minhook/buffer.c",
+        "minhook/ext/minhook/hook.c",
+        "minhook/ext/minhook/trampoline.c",
+        "minhook/ext/minhook/hde/hde32.c",
+        "minhook/ext/minhook/hde/hde64.c"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "add imgui core headers",
+      "date": "2026-04-14T20:03:00+03:00",
+      "include": [
+        "Internal Base/ext/imgui/imconfig.h",
+        "Internal Base/ext/imgui/imgui.h",
+        "Internal Base/ext/imgui/imgui_internal.h"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "add imgui stb dependency headers",
+      "date": "2026-04-24T18:29:00+03:00",
+      "include": [
+        "Internal Base/ext/imgui/imstb_rectpack.h",
+        "Internal Base/ext/imgui/imstb_textedit.h",
+        "Internal Base/ext/imgui/imstb_truetype.h"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "chore(deps): add imgui base source files",
+      "date": "2026-06-01T10:18:00+03:00",
+      "include": [
+        "Internal Base/ext/imgui/imgui.cpp",
+        "Internal Base/ext/imgui/imgui_draw.cpp"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "chore(deps): add imgui tables and widgets",
+      "date": "2026-06-01T10:46:03+03:00",
+      "include": [
+        "Internal Base/ext/imgui/imgui_tables.cpp",
+        "Internal Base/ext/imgui/imgui_widgets.cpp"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "chore(deps): add imgui dx11 and win32 backends",
+      "date": "2026-06-01T18:48:06+03:00",
+      "include": [
+        "Internal Base/ext/imgui/imgui_impl_dx11.cpp",
+        "Internal Base/ext/imgui/imgui_impl_dx11.h",
+        "Internal Base/ext/imgui/imgui_impl_win32.cpp",
+        "Internal Base/ext/imgui/imgui_impl_win32.h"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "added imgui demo source",
+      "date": "2026-06-01T19:19:59+03:00",
+      "include": [
+        "Internal Base/ext/imgui/imgui_demo.cpp"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "added hook interface header",
+      "date": "2026-06-01T20:23:45+03:00",
+      "include": [
+        "Internal Base/src/core/Hooks.h"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "add dll entrypoint thread bootstrap",
+      "date": "2026-06-01T21:30:03+03:00",
+      "include": [
+        "Internal Base/src/core/Main.cpp"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "feat(core): add present hook implementation",
+      "date": "2026-06-01T22:04:29+03:00",
+      "include": [
+        "Internal Base/src/core/Hooks.cpp"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "feat(menu): add menu interface",
+      "date": "2026-06-01T22:49:07+03:00",
+      "include": [
+        "Internal Base/src/menu/Menu.h"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "feat(menu): add menu rendering implementation",
+      "date": "2026-06-01T23:57:59+03:00",
+      "include": [
+        "Internal Base/src/menu/Menu.cpp"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "feat(sdk): add sdk vector math helpers",
+      "date": "2026-06-02T11:40:40+03:00",
+      "include": [
+        "Internal Base/src/sdk/utils/Vector.h"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "added sdk globals state header",
+      "date": "2026-06-02T12:04:53+03:00",
+      "include": [
+        "Internal Base/src/sdk/utils/Globals.h"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "added sdk utility helpers",
+      "date": "2026-06-02T12:45:42+03:00",
+      "include": [
+        "Internal Base/src/sdk/utils/Utils.h"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "added pattern scan declarations",
+      "date": "2026-06-02T20:01:50+03:00",
+      "include": [
+        "Internal Base/src/sdk/memory/PatternScan.h",
+        "Internal Base/src/sdk/memory/Patterns.h"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "added pattern scan implementation",
+      "date": "2026-06-03T07:22:50+03:00",
+      "include": [
+        "Internal Base/src/sdk/memory/PatternScan.cpp"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "added offset passthrough header",
+      "date": "2026-06-03T07:39:25+03:00",
+      "include": [
+        "Internal Base/src/sdk/memory/Offsets.h"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "add sdk entity class definitions",
+      "date": "2026-06-03T08:40:37+03:00",
+      "include": [
+        "Internal Base/src/sdk/entity/Classes.h"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "add entity manager interface",
+      "date": "2026-06-03T09:12:30+03:00",
+      "include": [
+        "Internal Base/src/sdk/entity/EntityManager.h"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "feat(sdk): add entity manager implementation",
+      "date": "2026-06-03T09:43:07+03:00",
+      "include": [
+        "Internal Base/src/sdk/entity/EntityManager.cpp"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "feat(visuals): add visuals feature aggregator",
+      "date": "2026-06-03T09:54:35+03:00",
+      "include": [
+        "Internal Base/src/feature/visuals/Visuals.h",
+        "Internal Base/src/feature/visuals/Visuals.cpp"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "added enemy counter overlay",
+      "date": "2026-06-03T10:39:13+03:00",
+      "include": [
+        "Internal Base/src/feature/visuals/enemycounter/EnemyCounter.h",
+        "Internal Base/src/feature/visuals/enemycounter/EnemyCounter.cpp"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "feat(visuals): add esp interface",
+      "date": "2026-06-03T11:06:00+03:00",
+      "include": [
+        "Internal Base/src/feature/visuals/esp/Esp.h"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "feat(visuals): add esp rendering implementation",
+      "date": "2026-06-03T11:27:41+03:00",
+      "include": [
+        "Internal Base/src/feature/visuals/esp/Esp.cpp"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "feat(visuals): add experimental chams headers",
+      "date": "2026-06-03T22:38:28+03:00",
+      "include": [
+        "Internal Base/src/feature/visuals/chams/Chams.h"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "added experimental chams implementation",
+      "date": "2026-06-03T23:37:08+03:00",
+      "include": [
+        "Internal Base/src/feature/visuals/chams/Chams.cpp"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "added combat feature header",
+      "date": "2026-06-03T23:49:53+03:00",
+      "include": [
+        "Internal Base/src/feature/combat/Combat.h"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "added legitbot interface",
+      "date": "2026-06-04T00:54:56+03:00",
+      "include": [
+        "Internal Base/src/feature/combat/legitbot/Aimbot.h"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "added legitbot implementation",
+      "date": "2026-06-04T01:14:03+03:00",
+      "include": [
+        "Internal Base/src/feature/combat/legitbot/Aimbot.cpp"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "add misc feature header",
+      "date": "2026-06-04T02:08:54+03:00",
+      "include": [
+        "Internal Base/src/feature/misc/Misc.h"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "add misc feature implementation",
+      "date": "2026-06-04T14:01:46+03:00",
+      "include": [
+        "Internal Base/src/feature/misc/Misc.cpp"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "add bhop placeholder header",
+      "date": "2026-06-04T14:43:51+03:00",
+      "include": [
+        "Internal Base/src/feature/misc/bhop/Bhop.h"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "feat(misc): add bhop placeholder implementation",
+      "date": "2026-06-04T15:11:54+03:00",
+      "include": [
+        "Internal Base/src/feature/misc/bhop/Bhop.cpp"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "imported button and interface dumpers",
+      "date": "2026-06-04T16:13:07+03:00",
+      "include": [
+        "Internal Base/dumper/buttons.*",
+        "Internal Base/dumper/interfaces.*",
+        "Internal Base/dumper/info.json"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "imported client and offsets dumpers",
+      "date": "2026-06-04T16:24:36+03:00",
+      "include": [
+        "Internal Base/dumper/client_dll.*",
+        "Internal Base/dumper/offsets.*"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "imported engine and host dumpers",
+      "date": "2026-06-04T17:33:28+03:00",
+      "include": [
+        "Internal Base/dumper/engine2_dll.*",
+        "Internal Base/dumper/host_dll.*"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "chore(dumper): import animation and material dumpers",
+      "date": "2026-06-05T06:16:04+03:00",
+      "include": [
+        "Internal Base/dumper/animationsystem_dll.*",
+        "Internal Base/dumper/materialsystem2_dll.*"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "chore(dumper): import mesh and worldrenderer dumpers",
+      "date": "2026-06-05T12:53:57+03:00",
+      "include": [
+        "Internal Base/dumper/meshsystem_dll.*",
+        "Internal Base/dumper/worldrenderer_dll.*"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "chore(dumper): import panorama and scene dumpers",
+      "date": "2026-06-05T13:04:09+03:00",
+      "include": [
+        "Internal Base/dumper/panorama_dll.*",
+        "Internal Base/dumper/scenesystem_dll.*"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "chore(dumper): import particle and pulse dumpers",
+      "date": "2026-06-05T13:41:08+03:00",
+      "include": [
+        "Internal Base/dumper/particles_dll.*",
+        "Internal Base/dumper/pulse_system_dll.*"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "chore(dumper): import render and resource dumpers",
+      "date": "2026-06-05T14:50:00+03:00",
+      "include": [
+        "Internal Base/dumper/rendersystemdx11_dll.*",
+        "Internal Base/dumper/resourcesystem_dll.*"
+      ],
+      "author_name": "VM_empty",
+      "author_email": "vlaalemorozov@edu.hse.ru"
+    },
+    {
+      "message": "import schema and network dumpers",
+      "date": "2026-06-05T15:20:37+03:00",
+      "include": [
+        "Internal Base/dumper/schemasystem_dll.*",
+        "Internal Base/dumper/networksystem_dll.*"
+      ],
+      "author_name": "AlexSky_PC",
+      "author_email": "araisky2007@gmail.com"
+    },
+    {
+      "message": "imported server and physics dumpers",
+      "date": "2026-06-05T16:05:15+03:00",
+      "include": [
+        "Internal Base/dumper/server_dll.*",
+        "Internal Base/dumper/vphysics2_dll.*"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "imported sound and steamaudio dumpers",
+      "date": "2026-06-05T17:14:07+03:00",
+      "include": [
+        "Internal Base/dumper/soundsystem_dll.*",
+        "Internal Base/dumper/steamaudio_dll.*"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    },
+    {
+      "message": "added repository overview",
+      "date": "2026-06-05T17:46:00+03:00",
+      "include": [
+        "README.md"
+      ],
+      "author_name": "Kropok77",
+      "author_email": "yuri.efimyuk@gmail.com"
+    }
+  ]
+}
