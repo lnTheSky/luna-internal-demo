@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Internal Base", "Internal Base\Internal Base.vcxproj", "{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "minhook", "minhook\minhook.vcxproj", "{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		OLLVM|x64 = OLLVM|x64
+		OLLVM|x86 = OLLVM|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.Debug|x64.ActiveCfg = Debug|x64
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.Debug|x64.Build.0 = Debug|x64
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.Debug|x86.ActiveCfg = Debug|Win32
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.Debug|x86.Build.0 = Debug|Win32
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.OLLVM|x64.ActiveCfg = OLLVM|x64
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.OLLVM|x64.Build.0 = OLLVM|x64
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.OLLVM|x86.ActiveCfg = OLLVM|Win32
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.OLLVM|x86.Build.0 = OLLVM|Win32
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.Release|x64.ActiveCfg = Release|x64
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.Release|x64.Build.0 = Release|x64
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.Release|x86.ActiveCfg = Release|Win32
+		{BBD6859F-03EA-4E0C-87C9-1759AC2E0F23}.Release|x86.Build.0 = Release|Win32
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.Debug|x64.ActiveCfg = Debug|x64
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.Debug|x64.Build.0 = Debug|x64
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.Debug|x86.ActiveCfg = Debug|Win32
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.Debug|x86.Build.0 = Debug|Win32
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.OLLVM|x64.ActiveCfg = Release|x64
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.OLLVM|x64.Build.0 = Release|x64
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.OLLVM|x86.ActiveCfg = Debug|Win32
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.OLLVM|x86.Build.0 = Debug|Win32
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.Release|x64.ActiveCfg = Release|x64
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.Release|x64.Build.0 = Release|x64
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.Release|x86.ActiveCfg = Release|Win32
+		{ADDAC54A-A42B-41A9-9B11-1691BA3A27EE}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1069A7EE-4BC4-4AAB-95C5-8D8F94857E74}
+	EndGlobalSection
+EndGlobal
