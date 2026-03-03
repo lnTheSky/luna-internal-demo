@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Hooks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\feature\visuals\esp\Esp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\feature\combat\legitbot\Aimbot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menu\Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\imgui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\imgui\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\imgui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\imgui\imgui_impl_dx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\imgui\imgui_impl_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\imgui\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ext\imgui\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sdk\entity\EntityManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sdk\memory\PatternScan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\feature\misc\bhop\Bhop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\feature\visuals\Visuals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\feature\misc\Misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\feature\visuals\enemycounter\EnemyCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\Hooks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\feature\visuals\Visuals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\feature\visuals\esp\Esp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\feature\combat\legitbot\Aimbot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\feature\combat\Combat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\feature\misc\Misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menu\Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\imgui\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\imgui\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\imgui\imgui_impl_dx11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\imgui\imgui_impl_win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\imgui\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\imgui\imstb_rectpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\imgui\imstb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\imgui\imstb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\entity\EntityManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\memory\PatternScan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\utils\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\entity\Classes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\memory\Offsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\memory\Patterns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\utils\Globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sdk\utils\Vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\feature\visuals\enemycounter\EnemyCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\feature\misc\bhop\Bhop.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\animationsystem_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\buttons.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\client_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\engine2_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\host_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\interfaces.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\materialsystem2_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\meshsystem_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\networksystem_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\offsets.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\panorama_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\particles_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\pulse_system_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\rendersystemdx11_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\resourcesystem_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\scenesystem_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\schemasystem_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\server_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\soundsystem_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\steamaudio_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\vphysics2_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dumper\worldrenderer_dll.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dumper\animationsystem_dll.cs" />
+    <None Include="dumper\animationsystem_dll.json" />
+    <None Include="dumper\animationsystem_dll.rs" />
+    <None Include="dumper\buttons.cs" />
+    <None Include="dumper\buttons.json" />
+    <None Include="dumper\buttons.rs" />
+    <None Include="dumper\client_dll.cs" />
+    <None Include="dumper\client_dll.json" />
+    <None Include="dumper\client_dll.rs" />
+    <None Include="dumper\engine2_dll.cs" />
+    <None Include="dumper\engine2_dll.json" />
+    <None Include="dumper\engine2_dll.rs" />
+    <None Include="dumper\host_dll.cs" />
+    <None Include="dumper\host_dll.json" />
+    <None Include="dumper\host_dll.rs" />
+    <None Include="dumper\info.json" />
+    <None Include="dumper\interfaces.cs" />
+    <None Include="dumper\interfaces.json" />
+    <None Include="dumper\interfaces.rs" />
+    <None Include="dumper\materialsystem2_dll.cs" />
+    <None Include="dumper\materialsystem2_dll.json" />
+    <None Include="dumper\materialsystem2_dll.rs" />
+    <None Include="dumper\meshsystem_dll.cs" />
+    <None Include="dumper\meshsystem_dll.json" />
+    <None Include="dumper\meshsystem_dll.rs" />
+    <None Include="dumper\networksystem_dll.cs" />
+    <None Include="dumper\networksystem_dll.json" />
+    <None Include="dumper\networksystem_dll.rs" />
+    <None Include="dumper\offsets.cs" />
+    <None Include="dumper\offsets.json" />
+    <None Include="dumper\offsets.rs" />
+    <None Include="dumper\panorama_dll.cs" />
+    <None Include="dumper\panorama_dll.json" />
+    <None Include="dumper\panorama_dll.rs" />
+    <None Include="dumper\particles_dll.cs" />
+    <None Include="dumper\particles_dll.json" />
+    <None Include="dumper\particles_dll.rs" />
+    <None Include="dumper\pulse_system_dll.cs" />
+    <None Include="dumper\pulse_system_dll.json" />
+    <None Include="dumper\pulse_system_dll.rs" />
+    <None Include="dumper\rendersystemdx11_dll.cs" />
+    <None Include="dumper\rendersystemdx11_dll.json" />
+    <None Include="dumper\rendersystemdx11_dll.rs" />
+    <None Include="dumper\resourcesystem_dll.cs" />
+    <None Include="dumper\resourcesystem_dll.json" />
+    <None Include="dumper\resourcesystem_dll.rs" />
+    <None Include="dumper\scenesystem_dll.cs" />
+    <None Include="dumper\scenesystem_dll.json" />
+    <None Include="dumper\scenesystem_dll.rs" />
+    <None Include="dumper\schemasystem_dll.cs" />
+    <None Include="dumper\schemasystem_dll.json" />
+    <None Include="dumper\schemasystem_dll.rs" />
+    <None Include="dumper\server_dll.cs" />
+    <None Include="dumper\server_dll.json" />
+    <None Include="dumper\server_dll.rs" />
+    <None Include="dumper\soundsystem_dll.cs" />
+    <None Include="dumper\soundsystem_dll.json" />
+    <None Include="dumper\soundsystem_dll.rs" />
+    <None Include="dumper\steamaudio_dll.cs" />
+    <None Include="dumper\steamaudio_dll.json" />
+    <None Include="dumper\steamaudio_dll.rs" />
+    <None Include="dumper\vphysics2_dll.cs" />
+    <None Include="dumper\vphysics2_dll.json" />
+    <None Include="dumper\vphysics2_dll.rs" />
+    <None Include="dumper\worldrenderer_dll.cs" />
+    <None Include="dumper\worldrenderer_dll.json" />
+    <None Include="dumper\worldrenderer_dll.rs" />
+  </ItemGroup>
+</Project>
